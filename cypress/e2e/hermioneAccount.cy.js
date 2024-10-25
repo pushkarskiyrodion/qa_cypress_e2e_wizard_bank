@@ -24,7 +24,7 @@ describe(`Hermione's Account`, () => {
       .contains('strong', accountNumber)
       .should('be.visible');
     cy.contains('[ng-hide="noAccount"]', 'Balance')
-      .contains('strong', '0')
+      .contains('strong', initialBalance)
       .should('be.visible');
     cy.contains('.ng-binding', 'Dollar')
       .should('be.visible');
